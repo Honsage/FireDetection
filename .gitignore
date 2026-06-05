@@ -1,5 +1,12 @@
+# Dependencies
+venv/
+
+# Environment and secrets
+.env
+
+# IDEs
+.vscode/
+.idea/
+
 # Dataset
 dataset/
-
-# Environment
-.env
