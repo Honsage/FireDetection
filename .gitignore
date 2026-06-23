@@ -1,6 +1,9 @@
 # Dependencies
 venv/
 
+# Cache
+__pycache__/
+
 # Environment and secrets
 .env
 
@@ -10,3 +13,8 @@ venv/
 
 # Dataset
 dataset/
+*.tfrecord
+
+# Weights
+*.h5
+*.weights.h5
