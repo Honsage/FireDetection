@@ -15,6 +15,10 @@ __pycache__/
 dataset/
 *.tfrecord
 
+# Fitting
+.ipynb_checkpoints/
+checkpoints/
+
 # Weights
 *.h5
 *.weights.h5
