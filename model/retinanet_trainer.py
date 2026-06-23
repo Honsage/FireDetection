@@ -114,7 +114,7 @@ class RetinaNetTrainer(tf.keras.Model):
         )
 
         # Регрессионный лосс — только позитивные якоря
-        reg_loss = self.reg_loss(
+        reg_loss = self.reg_loss.call(
             reg_targets, reg_pred, pos_mask=pos_masks
         )
 

@@ -54,10 +54,9 @@ class SmoothL1Loss(tf.keras.losses.Loss):
         )
 
         if pos_mask is not None:
-            mask = tf.cast(pos_mask, tf.float32)
-            mask = tf.expand_dims(mask, -1)
-            loss = loss * mask
-
+            mask    = tf.cast(pos_mask, tf.float32)
+            mask    = tf.expand_dims(mask, -1)
+            loss    = loss * mask
             num_pos = tf.maximum(tf.reduce_sum(mask), 1.0)
             return tf.reduce_sum(loss) / num_pos
 
